@@ -75,7 +75,7 @@
             </div>
             <div class="col-sm-9">
                 <% content = params['content'] %>
-                <p><%= content %></p>
+                <p><%= content.gsub(/\r\n|\r|\n/, "<br>") %></p>
             </div>
         </div>
      
